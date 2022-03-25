@@ -27,10 +27,6 @@ spec:
       ports:
         - containerPort: 80
           name: "http-server"
-      command:
-      - /bin/bash
-      - "-c"
-      - "sleep 60m"
       volumeMounts:
         - mountPath: "/usr/share/nginx/html"
           name: htmlvol
